@@ -1,7 +1,15 @@
 html, body{
     margin:0px;
-    height: 100%;
+    height: 100vh;
     font-family: fantasy;
+   
+}
+body{
+        background-attachment: fixed;
+       background-image: url(assets/background3.jpg);
+    background-size:cover;
+      background-position: right;
+    background-repeat: no-repeat;
 }
 .title{
     display:flex;
@@ -10,7 +18,7 @@ html, body{
 }
 
 h1{
-    font-size: 10vw;
+    font-size: 8vw;
     color: black;
     text-shadow: 2px 2px 4px white;
     
@@ -21,12 +29,10 @@ p{
 
 }
 .home, .container-fluid{
-    background-image: url(assets/background3.jpg);
-    background-size:cover;
-      background-position: right;
-   
+ 
+
     
-    height: 100%;
+    height: 100vh;
 }
 
 .icon{
@@ -35,30 +41,19 @@ p{
 align-items: center;
 }
 
-footer{
-  background-image:  linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(226,226,226,0.43) 2%,rgba(219,219,219,0.79) 50%,rgba(209,209,209,0.8) 51%,rgba(234,234,234,1) 78%,rgba(254,254,254,0.54) 100%);
-    height: 10%;
-    
-}
-.foot{
-    height: 100%;
-}
+
+
 .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     height: 100%;
+   background-image:  linear-gradient(to right, rgba(217,214,217,0.9) 0%, rgba(212,212,212,0.8) 100%);
 }
 
-.ficons{
-    height: 45%;
-}
+
 
 .cercle{
     height: 50%;
-    width: 50%;
-    background-color: red;
-    border-radius: 50%;
+    width: 75%;
+    background-color: black;
+    border-radius: 5%;
     box-shadow: 2px 3px 10px white; 
 }
 .test{
@@ -73,6 +68,7 @@ align-items: center;
     background-image: url(assets/kick2.jpg);
     background-size: cover;
    background-position: center;
+
 }
 
 .history{
@@ -84,14 +80,14 @@ align-items: center;
 .classification{
     background-image: url(assets/classification2.png);
     background-position: center;
-    background-size: 80%;
+    background-size: 60%;
     background-repeat: no-repeat;
      background-color: rgba(255, 255, 255, 0.6);
 }
 .rules{
     background-image: url(assets/firehand.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 130%;
 }
 
 .maps{
@@ -103,7 +99,7 @@ align-items: center;
      background-image: url(assets/schedule3.png);
     background-color: rgba(255, 255, 255, 0.6);
           background-position: center;
-    background-size: 80%;
+    background-size: 60%;
     background-repeat: no-repeat;
 }
 
@@ -111,5 +107,52 @@ align-items: center;
     font-size: 23px;
     color: white;
     text-shadow: 2px 2px 4px black;
- 
 }
+
+a{
+    display: inline-block;
+    height: 100%;
+width: 100%;
+}
+
+
+.ficons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bhistory{
+  background-image:   linear-gradient(to right, rgba(255,255,255,0.63) 0%, rgba(255,255,255,0.45) 75%, rgba(255,255,255,0.39) 100%);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+}
+.navbar {
+    /* position: absolute; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    padding: .5rem 1rem;
+}
+
+.space{
+   height: 100px;
+}
+
