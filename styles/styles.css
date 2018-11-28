@@ -40,7 +40,9 @@ footer{
     height: 10%;
     
 }
-
+.foot{
+    height: 100%;
+}
 .footer{
     display: flex;
     justify-content: center;
@@ -56,7 +58,8 @@ footer{
     height: 50%;
     width: 50%;
     background-color: red;
-    border-radius: 50%
+    border-radius: 50%;
+    box-shadow: 2px 3px 10px white; 
 }
 .test{
     width: 100%;
@@ -67,8 +70,9 @@ align-items: center;
     flex-direction: column;
 }
 .teams{
-    background-image: url(assets/background.jpg);
-    background-size: 200%;
+    background-image: url(assets/kick2.jpg);
+    background-size: cover;
+   background-position: center;
 }
 
 .history{
@@ -80,7 +84,9 @@ align-items: center;
 .classification{
     background-image: url(assets/classification2.png);
     background-position: center;
-    background-size: cover;
+    background-size: 80%;
+    background-repeat: no-repeat;
+     background-color: rgba(255, 255, 255, 0.6);
 }
 .rules{
     background-image: url(assets/firehand.jpg);
@@ -94,8 +100,16 @@ align-items: center;
     background-size: contain;
 }
 .schedule{
-     background-image: url(assets/schedule.png);
+     background-image: url(assets/schedule3.png);
     background-color: rgba(255, 255, 255, 0.6);
           background-position: center;
-    background-size: contain;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.picon{
+    font-size: 23px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+ 
 }
