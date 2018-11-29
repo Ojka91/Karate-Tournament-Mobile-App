@@ -1,6 +1,6 @@
 html, body{
     margin:0px;
-    height: 100vh;
+    
     font-family: fantasy;
    
 }
@@ -28,11 +28,9 @@ p{
     justify-content: center;
 
 }
-.home, .container-fluid{
- 
-
-    
+.home{
     height: 100vh;
+
 }
 
 .icon{
@@ -78,9 +76,9 @@ align-items: center;
 }
 
 .classification{
-    background-image: url(assets/classification2.png);
+    background-image: url(assets/classification2.jpeg);
     background-position: center;
-    background-size: 60%;
+    background-size: 110%;
     background-repeat: no-repeat;
      background-color: rgba(255, 255, 255, 0.6);
 }
@@ -96,10 +94,10 @@ align-items: center;
     background-size: contain;
 }
 .schedule{
-     background-image: url(assets/schedule3.png);
+     background-image: url(assets/schedule5.png);
     background-color: rgba(255, 255, 255, 0.6);
           background-position: center;
-    background-size: 60%;
+    background-size: 180%;
     background-repeat: no-repeat;
 }
 
@@ -122,7 +120,7 @@ width: 100%;
     align-items: center;
 }
 
-.bhistory{
+.bhistory, .bteams, .login{
   background-image:   linear-gradient(to right, rgba(255,255,255,0.63) 0%, rgba(255,255,255,0.45) 75%, rgba(255,255,255,0.39) 100%);
     border-radius: 5px;
     padding: 10px;
@@ -154,5 +152,118 @@ width: 100%;
 
 .space{
    height: 100px;
+}
+
+
+.wlogo{
+    height: 25px;
+}
+.logopos{
+    display: flex;
+    flex-direction: row-reverse;
+   margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+
+.brules{
+ height: 60%;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-image:  linear-gradient(to bottom, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+    display: flex;
+    justify-content: center;
+}
+.btn-link {
+    font-weight: 400;
+    color: cadetblue;
+    background-color: transparent;
+     text-shadow: 2px 2px 4px white;
+}
+.checkboxes{
+    display: flex;
+justify-content: center;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.listteams, .bteams{
+   display: flex;
+    flex-direction: column;
+
+}
+
+label {
+ 
+     margin-bottom: 0px;
+}
+
+
+
+
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+     animation: 1s fadeIn 1;
+}
+
+input {
+    border: 2px solid border-left: ;
+    border-radius: 4px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.submit{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type=submit]{
+    padding: 5px;
+   background-color: azure;
+    border-radius: 5px;
+}
+a{
+/*
+    width: 50px;
+    height: 50%;
+*/
 }
 

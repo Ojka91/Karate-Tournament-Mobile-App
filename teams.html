@@ -16,18 +16,80 @@
 <body>
     <div class="home">
         <div class="container-fluid">
-             <div class="row">
+            <div class="row">
                 <div class="col-12 title">
                     <h1>Teams</h1>
                 </div>
             </div>
-           
-           
-           
-           
-           
-           
-           
+            <div class="bteams">
+                <div class="checkboxes">
+                    <input type="checkbox" name="style" value="kumite"> Kumite
+                    <input type="checkbox" name="style" value="kata"> Kata
+
+
+
+                    <label for="states" class="flex">States</label>
+                    <select class="flex" name="states" id="states">
+                        <option value="All" selected>All</option>
+                    </select>
+
+
+
+                    <div class="space"></div>
+                    
+                    
+                    
+                </div>
+
+                <div class="listteams">
+                    <h3>Spain</h3>
+                    <ul>
+                        <li> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata">Kata</a>
+                        </li>
+                        <div class="collapse" id="kata">
+
+                            <ul>
+                                <li>Damián Quintero</li>
+                            </ul>
+                        </div>
+                        <li><a data-toggle="collapse" href="#kumite" role="button" aria-expanded="false" aria-controls="kumite">Kumite</a></li>
+                        <div class="collapse" id="kumite">
+                            <ul>
+                                <li>Óscar Vázquez</li>
+                                <li>Manuel “Lolo” Rasero</li>
+                            </ul>
+                        </div>
+                    </ul>
+                    
+                     <h3>France</h3>
+                    <ul>
+                        <li> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata">Kata</a>
+                        </li>
+                        <div class="collapse" id="kata">
+
+                            <ul>
+                                <li>adaea</li>
+                            </ul>
+                        </div>
+                        <li><a data-toggle="collapse" href="#kumitef" role="button" aria-expanded="false" aria-controls="kumite">Kumite</a></li>
+                        <div class="collapse" id="kumitef">
+                            <ul>
+                                <li>Óeazquez</li>
+                                <li>Manaefsero</li>
+                            </ul>
+                        </div>
+                    </ul>
+
+                
+                
+
+                </div>
+            </div>
+
+
+
+            <div class="space"></div>
+
             <div class="row fixed-bottom footer">
                 <div class="col-4"></div>
                 <div class="col-4 ficons">
@@ -40,28 +102,28 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html">Home</a>
-                          </li>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="schedules.html">Schedules</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="classification.html">Classification</a>
                                 </li>
-                                 <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" href="location.html">Location</a>
                                 </li>
-                                 <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" href="history.html">History</a>
                                 </li>
-                                 <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" href="rules.html">Rules</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <div class="col-4 ficons"><img src="styles/assets/login.png"></div>  
-            </div> 
+                <div class="col-4 ficons"><a href="login.html"><img src="styles/assets/login.png"></a></div>
+            </div>
 
         </div>
     </div>
