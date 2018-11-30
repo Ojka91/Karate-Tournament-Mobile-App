@@ -66,6 +66,7 @@ align-items: center;
     background-image: url(assets/kick2.jpg);
     background-size: cover;
    background-position: center;
+   
 
 }
 
@@ -242,10 +243,12 @@ label {
 input {
     border: 2px solid border-left: ;
     border-radius: 4px;
+   
 }
 .login{
     display: flex;
     flex-direction: column;
+ 
 }
 
 
