@@ -158,6 +158,7 @@ width: 100%;
 
 .wlogo{
     height: 25px;
+    margin-top: 10px;
 }
 .logopos{
     display: flex;
@@ -269,4 +270,3 @@ a{
     height: 50%;
 */
 }
-
