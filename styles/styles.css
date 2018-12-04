@@ -30,7 +30,7 @@ p{
 }
 .home{
     height: 100vh;
-
+    
 }
 
 .icon{
@@ -126,6 +126,7 @@ width: 100%;
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
+    
 }
 
 .navbar-nav {
@@ -264,9 +265,6 @@ input[type=submit]{
    background-color: azure;
     border-radius: 5px;
 }
-a{
-/*
-    width: 50px;
-    height: 50%;
-*/
-}
+
+
+
