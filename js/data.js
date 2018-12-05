@@ -213,7 +213,7 @@ var data = [
         "last_name": "Dimov",
         "age": 23,
         "country": "Ukraine",
-        "country_id": "UA",
+        "country_id": "UK",
         "style": "Kumite",
         "tatami": 1,
         "time": "10:00",

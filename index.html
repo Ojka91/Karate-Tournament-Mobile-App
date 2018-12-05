@@ -98,19 +98,21 @@
                             <input type="checkbox" name="style" value="kata"> Kata
                             <label for="states" class="flex">States</label>
                             <select class="flex" name="states" id="states">
-                                <option value="All" selected>All</option>
+                                <option value="All" selected >All</option>
+                                <option value="" v-for="state in states">{{state}}</option>
                             </select>
                             <div class="space"></div>
                         </div>
                         <div class="listteams">
-                            <h3>Spain</h3>
+                            <span v-for="data in myData">
+                            <h3>{{data.country}}</h3>
                             <ul>
-                                <li> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata">Kata</a>
+                                <li> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata">{{data.style}}</a>
                                 </li>
                                 <div class="collapse" id="kata">
 
                                     <ul>
-                                        <li>Damián Quintero</li>
+                                        <li>{{data.name}}-{{data.last_name}}</li>
                                     </ul>
                                 </div>
                                 <li><a data-toggle="collapse" href="#kumite" role="button" aria-expanded="false" aria-controls="kumite">Kumite</a></li>
@@ -121,6 +123,7 @@
                                     </ul>
                                 </div>
                             </ul>
+                            </span>
                             <h3>France</h3>
                             <ul>
                                 <li> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata">Kata</a>
@@ -468,8 +471,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
- <script src="js/main.js"></script>
  <script src="js/data.js"></script>
+ <script src="js/main.js"></script>
   
 </body>
 
