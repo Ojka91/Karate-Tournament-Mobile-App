@@ -27,7 +27,7 @@
                     </div>
                     <div class="row icon">
 
-                        <div class="col-6 test fadeIn">
+                        <div class="col-6 col-sm-4 test fadeIn">
 
                             <p class="picon" id="team">Teams</p>
 
@@ -36,43 +36,43 @@
                             </div>
 
                         </div>
-                        <div class="col-6 test fadeIn">
+                        <div class="col-6 col-sm-4 test fadeIn">
                             <p class="picon">Schedules</p>
                             <div class="cercle schedule" v-on:click='swap("schedule")'>
                                 
                             </div>
                         </div>
-                    </div>
-                    <div class="row icon">
+                  
+                    
 
-                        <div class="col-6 test fadeIn">
+                        <div class="col-6 col-sm-4 test fadeIn">
                             <p class="picon">Classification</p>
                             <div class="cercle classification" v-on:click='swap("classification")'>
                                 
                             </div>
                         </div>
-                        <div class="col-6 test fadeIn">
+                        <div class="col-6 col-sm-4 test fadeIn">
                             <p class="picon">Location</p>
                             <div class="cercle maps" v-on:click='swap("location")'>
                                 
                             </div>
                         </div>
-                    </div>
-                    <div class="row icon">
-                        <div class="col-6 test fadeIn">
+                  
+                    
+                        <div class="col-6 col-sm-4 test fadeIn">
                             <p class="picon">History</p>
                             <div class="cercle history" v-on:click='swap("history")'>
                                
                             </div>
                         </div>
-                        <div class="col-6 test fadeIn">
+                        <div class="col-6 col-sm-4 test fadeIn">
                             <p class="picon">Rules</p>
                             <div class="cercle rules" v-on:click='swap("rules")'>
                                
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
+                    
+                    
                         <div class="col-10">
                         </div>
                         <div class="col-2">
@@ -84,7 +84,7 @@
          </div>
 
 
-       <div class="bteams" id="teams" v-if="page === 'teams'">
+       <div class="bteams slide-top" id="teams" v-if="page === 'teams'">
             <div class="home">
                 <div class="container-fluid">
                     <div class="row">
@@ -147,7 +147,7 @@
             </div>
         </div>
 
-        <div id="schedule" v-if="page === 'schedule'">
+        <div class="slide-top" id="schedule" v-if="page === 'schedule'">
             <div class="home">
                 <div class="container-fluid">
 
@@ -207,7 +207,7 @@
             </div>
         </div>
 
-        <div class="bclassification" id="classifications" v-if="page === 'classification'">
+        <div class="bclassification slide-top" id="classifications" v-if="page === 'classification'">
             <div class="home">
                 <div class="container-fluid">
                     <div class="row">
@@ -222,7 +222,7 @@
 
 
 
-       <div class="blocation" id="location" v-if="page === 'location'">
+       <div class="blocation slide-top" id="location" v-if="page === 'location'">
             <div class="home">
                 <div class="container-fluid">
                     <div class="row">
@@ -237,7 +237,7 @@
 
 
 
-        <div class="bhistory" id="history" v-if="page === 'history'">
+        <div class="bhistory slide-top" id="history" v-if="page === 'history'">
             <div class="home">
                 <div class="container-fluid">
 
@@ -264,7 +264,7 @@
 
 
 
-        <div class="brules" id="rules" v-if="page === 'rules'">
+        <div class="brules" id="rules slide-top" v-if="page === 'rules'">
             <div class="home">
                 <div class="container-fluid">
 
@@ -392,7 +392,7 @@
         </div>
 
 
-        <div id="login" v-if="page === 'login'">
+        <div id="login" class="slide-top" v-if="page === 'login'">
             <div class="home">
                 <div class="container-fluid">
                     <div class="row">
@@ -422,8 +422,8 @@
 
         <div id="navbar" v-if="page !== 'home'">
             <div class="row fixed-bottom footer">
-                <div class="col-4"></div>
-                <div class="col-4 ficons">
+                
+                <div class="col-12">
                     <nav class="navbar navbar-expand-sm navbar-light bg-faded">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation" >
                             <span class="navbar-toggler-icon"></span>
@@ -455,8 +455,9 @@
                             </ul>
                         </div>
                     </nav>
+                      <a  class="ficons"><img src="styles/assets/login.png" v-on:click='swap("login")'></a>
                 </div>
-                <div class="col-4 ficons"><a  class="ficons"><img src="styles/assets/login.png" v-on:click='swap("login")'></a></div>
+              
             </div>
         </div>
     </div>

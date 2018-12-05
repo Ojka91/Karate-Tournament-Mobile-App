@@ -29,8 +29,7 @@ p{
 
 }
 .home{
-    height: 100vh;
-    
+    height: 100vh;    
 }
 
 .icon{
@@ -108,17 +107,14 @@ align-items: center;
     text-shadow: 2px 2px 4px black;
 }
 
-a{
-    display: inline-block;
-    height: 100%;
-width: 100%;
-}
 
 
 .ficons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    bottom: 17px;
+    right: -275px;
+    position: fixed;
+    
 }
 
 .bhistory, .bteams, .login{
@@ -242,6 +238,37 @@ label {
      animation: 1s fadeIn 1;
 }
 
+
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+
+
 input {
     border: 2px solid border-left: ;
     border-radius: 4px;
@@ -266,5 +293,33 @@ input[type=submit]{
     border-radius: 5px;
 }
 
+
+
+
+
+
+@media only screen and (orientation: landscape) {
+    .cercle{
+        height: 75%;
+        width: 50%;
+    }
+    .wlogo{
+        margin-top: 30px;
+    }
+    .ficons {
+       
+        display: flex;
+       
+        right: -4%;
+        bottom: 5.5%;
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-expand-sm{
+        margin-left: 40px;
+    }
+}
 
 
