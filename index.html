@@ -104,20 +104,20 @@
                             <div class="space"></div>
                         </div>
                         <div class="listteams">
-                            <span v-for="data in teams">
+                            <span v-for="(data, index) in teams">
                             <h3>{{data.country}}</h3>
                             <ul>
                                
-                                <li v-if="data.kumite.name"> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata" >{{data.kumite.style}}</a>
+                                <li v-if="data.kumite.name"> <a data-toggle="collapse" v-bind:href="'#kumite'+index" role="button" aria-expanded="false" v-bind:aria-controls="'kumite'+index" >{{data.kumite.style}}</a>
                                 </li>
-                                <div class="collapse" id="kata">
+                                <div class="collapse" v-bind:id="'kumite'+index" >
 
                                     <ul>
                                         <li v-if="data.kumite.name">{{data.kumite.name}}</li>
                                     </ul>
                                 </div>
-                                <li v-if="data.kata.style"><a data-toggle="collapse" href="#kumite" role="button" aria-expanded="false" aria-controls="kumite" >{{data.kata.style}}</a></li>
-                                <div class="collapse" id="kumite">
+                                <li v-if="data.kata.style"><a data-toggle="collapse" v-bind:href='"#kata"+index' role="button" aria-expanded="false" v-bind:aria-controls='"kata"+index' >{{data.kata.style}}</a></li>
+                                <div class="collapse" v-bind:id='"kata"+index'>
                                     <ul>
                                         <li v-if="data.kata.name">{{data.kata.name}}</li>
                                        
