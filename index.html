@@ -104,44 +104,28 @@
                             <div class="space"></div>
                         </div>
                         <div class="listteams">
-                            <span v-for="data in myData">
+                            <span v-for="data in teams">
                             <h3>{{data.country}}</h3>
                             <ul>
-                                <li> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata">{{data.style}}</a>
+                               
+                                <li v-if="data.kumite.name"> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata" >{{data.kumite.style}}</a>
                                 </li>
                                 <div class="collapse" id="kata">
 
                                     <ul>
-                                        <li>{{data.name}}-{{data.last_name}}</li>
+                                        <li v-if="data.kumite.name">{{data.kumite.name}}</li>
                                     </ul>
                                 </div>
-                                <li><a data-toggle="collapse" href="#kumite" role="button" aria-expanded="false" aria-controls="kumite">Kumite</a></li>
+                                <li v-if="data.kata.style"><a data-toggle="collapse" href="#kumite" role="button" aria-expanded="false" aria-controls="kumite" >{{data.kata.style}}</a></li>
                                 <div class="collapse" id="kumite">
                                     <ul>
-                                        <li>Óscar Vázquez</li>
-                                        <li>Manuel “Lolo” Rasero</li>
+                                        <li v-if="data.kata.name">{{data.kata.name}}</li>
+                                       
                                     </ul>
                                 </div>
                             </ul>
                             </span>
-                            <h3>France</h3>
-                            <ul>
-                                <li> <a data-toggle="collapse" href="#kata" role="button" aria-expanded="false" aria-controls="kata">Kata</a>
-                                </li>
-                                <div class="collapse" id="kata">
-
-                                    <ul>
-                                        <li>adaea</li>
-                                    </ul>
-                                </div>
-                                <li><a data-toggle="collapse" href="#kumitef" role="button" aria-expanded="false" aria-controls="kumite">Kumite</a></li>
-                                <div class="collapse" id="kumitef">
-                                    <ul>
-                                        <li>Óeazquez</li>
-                                        <li>Manaefsero</li>
-                                    </ul>
-                                </div>
-                            </ul>
+                        
                         </div>
                     </div>
                     <div class="space"></div>
