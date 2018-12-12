@@ -323,3 +323,21 @@ input[type=submit]{
 }
 
 
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mapa{
+    height: 300px;
+    width: 300px;
+}
+.time{
+    font-weight: bold;
+}
+
+.schtitle{
+    font-size: 24px;
+}

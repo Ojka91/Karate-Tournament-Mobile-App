@@ -1,27 +1,15 @@
 var data = {
-    "participants": [{
-            "name": "Damian",
-            "last_name": "Quintero",
-            "age": 22,
-            "country": "Spain",
-            "country_id": "SP",
-            "style": "Kata",
-            "tatami": 1,
-            "time": "10:30",
-            "oponent": "Abdul Wainwright"
-     },
-        {
-            "name": "Abdul",
-            "last_name": "Wainwright",
-            "age": 27,
-            "country": "Morocco",
-            "country_id": "MA",
-            "style": "Kata",
-            "tatami": 1,
-            "time": "10:30",
-            "oponent": "Damian Quintero"
-     },
-        {
+    "location": [{
+        "name": "Pavello Olimpic de Badalona",
+        "direction": "Carrer de Ponent, 143, 08912 Badalona, Barcelona",
+        "iframe": '<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.8484419073593!2d2.2297803148244153!3d41.442510100540105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a29f17096759%3A0x7544a7bf718e1267!2sPavell%C3%B3+Ol%C3%ADmpic+de+Badalona!5e0!3m2!1sen!2ses!4v1544540806773" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>'
+    }],
+    
+    "classification":[{
+        "pre": "The classification of the torunament will be displayed here after the tournament is done. Meanwhile, navigate through the app to find all the information you need "
+    }],
+    "participants": [   {
+            "fullname":"Luciano Snider",
             "name": "Luciano",
             "last_name": "Snider",
             "age": 20,
@@ -30,7 +18,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "9:30",
-            "oponent": "Benn Cornish"
+            "oponent": "Benn Cornish",
+            "display": "si",
+            "description": "Luciano Snider White, short hair hangs over a skinny, charming face. Shuttered blue eyes, set rooted within their sockets, watch energetically over the armies they've shown mercy on for so long.A birthmark stretching from the bottom of the right cheekbone , running towards the other eye and ending on his right cheek leaves a pleasurable memory of lost love.This is the face of Byron Afton, a true stargazer among dwarves. He stands common among others, despite his hefty frame.Theres something obscure about him, perhaps its a feeling of joy or perhaps it's simply his goodwill. But nonetheless, people tend to treat him like family, while spreading rumors about him behind his back.",
      },
         {
             "name": "Benn",
@@ -41,9 +31,12 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "9:30",
-            "oponent": "Luciano Snider"
+            "oponent": "Luciano Snider",
+            "display": "no",
+            "description": "Blonde, curly hair gently hangs over a bony, friendly face. Bloodshot pink eyes, set lightly within their sockets, watch vigorously over the woods they've protected for so long.Scars reaching from the top of the right cheek , running towards the tip of the nose and ending under his left eye leaves a satisfying memory of defended homes.This is the face of Hagwin Stagrunner, a true prodigy among night elves. He stands common among others, despite his light frame.There's something odd about him, perhaps it's his warmth or perhaps it's simply his unusual looks. But nonetheless, people tend to befriend him, while awkwardly avoid talking about his past.",
      },
-        {
+                     
+                         {
             "name": "Anayah",
             "last_name": "Long",
             "age": 22,
@@ -52,7 +45,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "10:00",
-            "oponent": "Patrik Warner"
+            "oponent": "Patrik Warner",
+            "display": "si",
+            "description": "Silver, straight hair slightly covers a craggy, worried face. Hollow green eyes, set handsomely within their sockets, watch anxiously over the country they've looked after for so long.A goatee alluringly compliments his eyes and hair and leaves an intriguing memory of his fortunate survival.This is the face of Maverick Hanson, a true prodigy among humans. He stands ordinary among others, despite his slim frame.There's something intriguing about him, perhaps it's a feeling of shame or perhaps it's simply his sympathy. But nonetheless, people tend to worship him, while learning as much about him as possible.",
      },
         {
             "name": "Patrick",
@@ -63,8 +58,37 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "10:00",
-            "oponent": "Anayah Long"
+            "oponent": "Anayah Long",
+            "display": "no",
+            "description": "Gray, shoulder-length hair clumsily hangs over a chiseled, tense face. Glinting blue eyes, set thightly within their sockets, watch intently over the homes they've nearly died for for so long.A large beard charmingly compliments his nose and leaves a captivating memory of his reckless luck.This is the face of Gnurl Gorebasher, a true pioneer among orcs. He stands common among others, despite his skinny frame.There's something captivating about him, perhaps it's his attitude or perhaps it's simply his unusual looks. But nonetheless, people tend to keep their distance, while awkwardly avoid talking about his past.",
      },
+         {   "name": "Damian",
+            "last_name": "Quintero",
+            "age": 22,
+            "country": "Spain",
+            "country_id": "SP",
+            "style": "Kata",
+            "tatami": 1,
+            "time": "10:30",
+            "oponent": "Abdul Wainwright",
+          "display": "si",
+          "description": "Blonde, long hair clumsily hangs over a skinny, anguished face. Squinting hazel eyes, set gracefully within their sockets, watch impatiently over the wildlife they've barely related to for so long.fair skin alluringly compliments his hair and leaves an amusing memory of his fortunate adventures.This is the face of Orion Barnett, a true pioneer among humans. He stands short among others, despite his fragile frame.",
+     },
+        {
+            "name": "Abdul",
+            "last_name": "Wainwright",
+            "age": 27,
+            "country": "Morocco",
+            "country_id": "MA",
+            "style": "Kata",
+            "tatami": 1,
+            "time": "10:30",
+            "oponent": "Damian Quintero",
+            "display": "no",
+            "description": "Brown, flowing hair neatly coiffured to reveal a furrowed, radiant face. Shuttered amber eyes, set charmingly within their sockets, watch admiringly over the natives they've fought for for so long.Freckles are spread beautifully across his cheeks and leaves a gracious memory of his reckless luck.This is the face of Alduin Dawnthorn, a true friend among high elves. He stands seductively among others, despite his scraggy frame.There's something obscure about him, perhaps it's his friendly demeanor or perhaps it's simply his odd companions. But nonetheless, people tend to flock towards him, while trying to subtly look more like him.",
+     },
+     
+    
         {
             "name": "Lee",
             "last_name": "An",
@@ -74,7 +98,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "11:00",
-            "oponent": "Willem Mendoza"
+            "oponent": "Willem Mendoza",
+            "display": "si",
+            "description": "Brown, coily hair slightly reveals a long, time-worn face. Woeful brown eyes, set graciously within their sockets, watch gratefully over the river they've watched over for so long.Dark stubble charmingly compliments his cheeks and leaves a captivating memory of his fortunate survival.This is the face of Kade Gedman, a true sentinel among halflings. He stands tiny among others, despite his fragile frame.There's something appealing about him, perhaps it's his clumsiness or perhaps it's simply his company. But nonetheless, people tend to subtly ignore him, while hoping their sons will grow up to be like him.",
      },
         {
             "name": "Willem",
@@ -85,7 +111,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "11:00",
-            "oponent": "Lee An"
+            "oponent": "Lee An",
+            "display": "no",
+            "description": "Brown, perfectly groomed hair is pulled back to reveal a fresh, friendly face. Shuttered aquamarine eyes, set dreadfully within their sockets, watch gratefully over the rivers they've bled for for so long.Several moles are spread grotesquely across his forehead and leaves a compelling memory of his fortunate survival.This is the face of Ninleyn Wildoak, a true daredevil among blood elves. He stands average among others, despite his lean frame.There's something extraordinary about him, perhaps it's a feeling of shame or perhaps it's simply a feeling of delight. But nonetheless, people tend to try to get him to marry their off-spring, while trying to hide from him.",
      },
         {
             "name": "Rajveer",
@@ -96,7 +124,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "11:30",
-            "oponent": "Renae Lu"
+            "oponent": "Renae Lu",
+            "display": "si",
+            "description": "Silver, straight hair braided to reveal a full, anguished face. Dancing brown eyes, set buried within their sockets, watch warmly over the mountains they've looked after for so long.Soft skin seductively compliments her hair and cheekbones and and leaves a satisfying memory of her fortunate destiny.The is the face of Lelarea Moonfall, a true fortune-hunter among dark elves. She stands big among others, despite her slim frame.There's something enigmatic about her, perhaps it's a feeling of hospitality or perhaps it's simply her humility. But nonetheless, people tend to thank her for her service, while training with her whenever she's available.",
      },
         {
             "name": "Renae",
@@ -107,9 +137,11 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "11:30",
-            "oponent": "Rajveer Mayo"
+            "oponent": "Rajveer Mayo",
+            "display": "no",
+            "description": "Chestnut, curly hair hangs over a long, friendly face. Beady green eyes, set seductively within their sockets, watch delightfully over the country they've come to appreciate for so long.Several moles are spread delicately on his neck and leaves a lasting burden of his unadventurous love life.This is the face of Brock Hanshaw, a true challenger among humans. He stands high among others, despite his scraggy frame.There's something enticing about him, perhaps it's his personality or perhaps it's simply his goodwill. But nonetheless, people tend to follow him, while helping him out in any way they can.",
      },
-        
+
         {
             "name": "Haiden",
             "last_name": "Bull",
@@ -119,7 +151,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "12:00",
-            "oponent": "Phillips Shanelle"
+            "oponent": "Phillips Shanelle",
+            "display": "si",
+            "description": "Gray, curly hair clumsily hangs over a bony, cheerful face. Shining blue eyes, set narrowly within their sockets, watch energetically over the stronghold they've befriended for so long.Several moles are spread charmingly across his whole face and leaves a tormenting memory of his upbringing.This is the face of Max Eustis, a true sentinel among giants. He stands tall among others, despite his slim frame.There's something captivating about him, perhaps it's his personality or perhaps it's simply his fortunate past. But nonetheless, people tend to flock towards him, while spreading stories about him.",
      },
 
         {
@@ -131,7 +165,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "12:30",
-            "oponent": "Kiran Van Achteren"
+            "oponent": "Kiran Van Achteren",
+            "display": "no",
+            "description": "Brown, frizzy hair gently hangs over a full, cheerful face. Glinting brown eyes, set concealed within their sockets, watch merrily over the natives they've protected for so long.Fair skin charmingly compliments his eyes and cheekbones and leaves a satisfying memory of his fortunate destiny.This is the face of Adam Afton, a true visionary among giants. He stands awkwardly among others, despite his skinny frame.There's something wonderful about him, perhaps it's a feeling of indifference or perhaps it's simply his clumsiness. But nonetheless, people tend to shower him with gifts, while hoping to one day follow in his footsteps.",
      },
         {
             "name": "Dobroslav",
@@ -142,7 +178,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "13:00",
-            "oponent": "Aesop Brady"
+            "oponent": "Aesop Brady",
+            "display": "si",
+            "description": "Black, short hair awkwardly hangs over a bony, tense face. Beady green eyes, set low within their sockets, watch readily over the mountains they've grieved with for so long.A sword left a mark stretching from just under the left eye , running towards her right nostril and ending under her right eye and leaves a stinging memory of lost love.The is the face of Faith Davenport, a true stargazer among humans. She stands average among others, despite her tough frame.There's something irregular about her, perhaps it's her bravery or perhaps it's simply her odd companions. But nonetheless, people tend to pretend to be her best friend, while hoping to one day follow in her footsteps.",
      },
         {
             "name": "Aesop",
@@ -153,7 +191,9 @@ var data = {
             "style": "Kata",
             "tatami": 1,
             "time": "13:00",
-            "oponent": "Dobroslav Maolain"
+            "oponent": "Dobroslav Maolain",
+            "display": "no",
+            "description": "Lorem blabla aesop",
      },
         {
             "name": "Rafael",
@@ -162,9 +202,11 @@ var data = {
             "country": "Azerbaijan",
             "country_id": "AZ",
             "style": "Kumite",
-            "tatami": 1,
+            "tatami": 2,
             "time": "9:30",
-            "oponent": "Walther Rocco"
+            "oponent": "Walther Rocco",
+            "display": "si",
+            "description": "Light blue, wavy hair is pulled back to reveal a lean, lively face. Woeful brown eyes, set wickedly within their sockets, watch heartily over the ancestors they've shown mercy on for so long.Tribal marks in the form of 1 stripe under each eye marks his birthright but, more importantly leaves an agonizing memory of defended lands.",
      },
         {
             "name": "Walther",
@@ -173,9 +215,11 @@ var data = {
             "country": "Puerto Rico",
             "country_id": "PR",
             "style": "Kumite",
-            "tatami": 1,
+            "tatami": 2,
             "time": "9:30",
-            "oponent": "Rafael Aghayev"
+            "oponent": "Rafael Aghayev",
+            "display": "no",
+            "description": "Ginger, short hair tight in a ponytail reveals a bony, charming face. Shuttered blue eyes, set a-symmetrically within their sockets, watch delicately over the spirits they've sought solace in for so long.A birthmark stretching from just under the right eyebrow , running towards the right side of his lips and ending on his left nostril leaves an agonizing memory of unexpected friendship.This is the face of Greekeels Copperbuttons, a true protector among goblins. He stands oddly among others, despite his muscled frame.",
      },
         {
             "name": "Imen",
@@ -184,9 +228,11 @@ var data = {
             "country": "Israel",
             "country_id": "IL",
             "style": "Kumite",
-            "tatami": 1,
+            "tatami": 2,
             "time": "10:00",
-            "oponent": "Dumuzi Dimov"
+            "oponent": "Dumuzi Dimov",
+            "display": "si",
+            "description": "Blonde, long hair tight in a ponytail reveals a thin, gloomy face. Big, round green eyes, set dreadfully within their sockets, watch discreetly over the natives they've come to appreciate for so long.A moustache elegantly compliments his eyes and cheekbones and leaves a delightful memory of his upbringing.This is the face of Haijen Zenunjo, a true hero among trolls. He stands small among others, despite his strong frame.",
      },
         {
             "name": "Dumuzi",
@@ -195,9 +241,11 @@ var data = {
             "country": "Ukraine",
             "country_id": "UK",
             "style": "Kumite",
-            "tatami": 1,
+            "tatami": 2,
             "time": "10:00",
-            "oponent": "Imen Kempf"
+            "oponent": "Imen Kempf",
+            "display": "no",
+            "description": "White, long hair almost fully covers a chiseled, sad face. Sparkling silver eyes, set well within their sockets, watch fondly over the haven they've looked after for so long.Freckles are spread delightfully across his whole face and leaves a captivating memory of his upbringing.This is the face of Ninleyn Dawnfury, a true spectacle among high elves. He stands seductively among others, despite his muscled frame.",
      },
         {
             "name": "Tessouat",
@@ -206,9 +254,11 @@ var data = {
             "country": "Netherlands",
             "country_id": "AN",
             "style": "Kumite",
-            "tatami": 1,
+            "tatami": 2,
             "time": "10:30",
-            "oponent": "Juozas Goebel"
+            "oponent": "Juozas Goebel",
+            "display": "si",
+            "description": "Black, dreadlocks slightly covers a bony, gloomy face. Glittering brown eyes, set thightly within their sockets, watch discreetly over the armies they've looked after for so long.Fair skin elegantly compliments her eyes and cheekbones and and leaves a bittersweet memory of her past.The is the face of Melinda Barnett, a true utopian among werewolves. She stands common among others, despite her delicate frame.",
      },
         {
             "name": "Juozas",
@@ -217,9 +267,11 @@ var data = {
             "country": "South Africa",
             "country_id": "ZA",
             "style": "Kumite",
-            "tatami": 1,
+            "tatami": 2,
             "time": "10:30",
-            "oponent": "Tessouat Albinson"
+            "oponent": "Tessouat Albinson",
+            "display": "no",
+            "description": "Chestnut, shoulder-length hair is pulled back to reveal a strong, lived-in face. Piercing gray eyes, set a-symmetrically within their sockets, watch wearily over the ships they've cared for for so long.Smooth skin handsomely compliments his cheekbones and leaves a satisfying memory of his fortunate upbringing.This is the face of Gunnar Cawthorn, a true pioneer among halflings. He stands seductively among others, despite his  frame.There's something appealing about him, perhaps it's his good will or perhaps it's simply his fortunate past. But nonetheless, people tend to stay on his good side, while secretly dispising him.",
      },
         {
             "name": "Rory",
@@ -230,10 +282,12 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "11:00",
-            "oponent": "Pòl Alamilla"
+            "oponent": "Pòl Alamilla",
+            "display": "si",
+            "description": "Black, short hair neatly coiffured to reveal a fresh, cheerful face. Glittering gray eyes, set high within their sockets, watch honorably over the homes they've watched over for so long.A moustache gorgeously compliments his eyes and mouth and leaves a bittersweet memory of his luck in love.This is the face of Bryson Wakeley, a true winner among giants. He stands common among others, despite his hefty frame.",
      },
         {
-            "name": "Pol",
+            "name": "Pòl",
             "last_name": "Alamilla",
             "age": 24,
             "country": "CATALUNYA FTW",
@@ -241,7 +295,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "11:00",
-            "oponent": "Rory Kelly"
+            "oponent": "Rory Kelly",
+            "display": "no",
+            "description": "Blue, short hair gently hangs over a round, sad face. Piercing brown eyes, set elegantly within their sockets, watch discreetly over the country they've fought for for so long.Tribal marks in the form of a stripe above and below his right eye marks his legacy but, more importantly leaves an intriguing memory of a reclaimed home.This is the face of Totonk Stormgauge, a true romanticist among gnomes. He stands tall among others, despite his strong frame.There's something misleading about him, perhaps it's a feeling of arogance or perhaps it's simply a feeling of sadness. But nonetheless, people tend to try to get him to marry their off-spring, while spreading rumors about him behind his back.",
      },
         {
             "name": "Kenji",
@@ -252,7 +308,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "11:30",
-            "oponent": "Kaliani Moana"
+            "oponent": "Kaliani Moana",
+            "display": "si",
+            "description": "Chestnut, oily hair almost fully covers a thin, wild face. Lidded amber eyes, set far within their sockets, watch guardedly over the spirits they've fought for for so long.A tattoo resembling a small wolf is prominently featured just above the left side of his left eyebrow leaves a beautiful memory of a former life.This is the face of Brycen Gedman, a true paladin among humans. He stands average among others, despite his slim frame.",
      },
         {
             "name": "Kaliani",
@@ -263,7 +321,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "11:30",
-            "oponent": "Kenji Fukui"
+            "oponent": "Kenji Fukui",
+            "display": "no",
+            "description": "White, long hair gently hangs over a long, frowning face. Big, round amber eyes, set dreadfully within their sockets, watch energetically over the stronghold they've loved for so long.A gunshot left a mark reaching from just under the right eye , running towards his right nostril and ending under his right eye leaves an intriguing memory of deceased love.This is the face of Kade Eustis, a true paladin among giants. He stands tiny among others, despite his tough frame.",
      },
         {
             "name": "Jarred",
@@ -274,7 +334,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "12:00",
-            "oponent": "Josiah Fellows"
+            "oponent": "Josiah Fellows",
+            "display": "si",
+            "description": "White, frizzy hair gently hangs over a round, lively face. Woeful blue eyes, set seductively within their sockets, watch meticulously over the rivers they've looked after for so long. tattoo of a sword is subtly placed just below his right eye leaves an amusing memory of a former life.This is the face of Binflonk Steamspanner, a true mercenary among gnomes. He stands average among others, despite his narrow frame.",
      },
         {
             "name": "Josiah",
@@ -285,7 +347,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "12:00",
-            "oponent": "Jarred Farmer"
+            "oponent": "Jarred Farmer",
+            "display": "no",
+            "description": "Light blue, curly hair almost fully covers a skinny, warm face. Shining gray eyes, set low within their sockets, watch yearningly over the stronghold they've worshipped for so long.A sword left a mark reaching from just under the left eyebrow , running towards the other eye and ending on his right cheekbone leaves a painful burden of companionship.This is the face of Binflonk Shinesprocket, a true prodigy among gnomes. He stands common among others, despite his scraggy frame.There's something alluring about him, perhaps it's his personality or perhaps it's simply his patience. But nonetheless, people tend to ask him about his latest victory, while hoping to one day follow in his footsteps.",
      },
         {
             "name": "Ewen",
@@ -295,8 +359,10 @@ var data = {
             "country_id": "GER",
             "style": "Kumite",
             "tatami": 1,
-            "time": "1  2:30",
-            "oponent": "Malika Pacheco"
+            "time": "12:30",
+            "oponent": "Malika Pacheco",
+            "display": "si",
+            "description": "Red, shoulder-length hair slightly covers a full, friendly face. Bulging green eyes, set high within their sockets, watch slowly over the homes they've worshipped for so long.Freckles are spread beautifully around his nose and cheekbones and leaves a beautiful memory of his fortunate adventures.This is the face of Brycen Wakelin, a true paladin among humans. He stands big among others, despite his narrow frame.There's something alluring about him, perhaps it's his perseverance or perhaps it's simply his friendly demeanor. But nonetheless, people tend to follow him, while treating him to a good meal when he's around.",
      },
         {
             "name": "Malika",
@@ -307,7 +373,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "12:30",
-            "oponent": "Ewen Harrington"
+            "oponent": "Ewen Harrington",
+            "display": "no",
+            "description": "Silver, coily hair almost fully covers a thin, cheerful face. Hollow green eyes, set thightly within their sockets, watch enthusiastically over the armies they've grieved with for so long.Tribal marks in the form of 2 stripes on each side of the face, running from just above the eyes to the bottom of the cheeks marks his blood relation but, more importantly leaves a beautiful memory of his ex-love.his is the face of Kade Lockwood, a true master among werewolves. He stands graciously among others, despite his light frame.There's something curious about him, perhaps it's his reputation or perhaps it's simply a feeling of coldness. But nonetheless, people tend to wish to get to know him better, while hoping to one day follow in his footsteps.",
      },
         {
             "name": "Jozef",
@@ -318,7 +386,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "13:00",
-            "oponent": "Eathan Ferry"
+            "oponent": "Eathan Ferry",
+            "display": "si",
+            "description": "Gray, short hair slightly reveals a strong, charming face. Shuttered gray eyes, set high within their sockets, watch delicately over the families they've fought for for so long.A gunshot left a mark reaching from just under the right eye , first running towards his fairly big lips and ending on his upper lip leaves a painful burden of unexpected friendship.This is the face of Addison Hansley, a true utopian among halflings. He stands gracefully among others, despite his light frame.",
      },
         {
             "name": "Eathan",
@@ -329,7 +399,9 @@ var data = {
             "style": "Kumite",
             "tatami": 1,
             "time": "13:00",
-            "oponent": "Jozef Ottilie"
+            "oponent": "Jozef Ottilie",
+            "display": "no",
+            "description": "Brown, well groomed hair awkwardly hangs over a round, lively face. Heavy green eyes, set graciously within their sockets, watch cautiously over the rivers they've become enchancted by for so long.A large beard alluringly compliments his nose and leaves a pleasurable memory of his luck.This is the face of Alduin Dawnwhisper, a true pioneer among night elves. He stands easily among others, despite his big frame.There's something alluring about him, perhaps it's his sense of justice or perhaps it's simply his sense of honor. But nonetheless, people tend to brag about knowing him, while making up bigger stories about him.",
      }],
 
 
@@ -339,6 +411,7 @@ var data = {
             "kata": {
                 "name": "Damian Quintero",
                 "style": "Kata",
+                
             },
      },
         {
@@ -540,15 +613,15 @@ var data = {
             },
             "kata": {},
               },
-              {
-               "country": "Ukraine",
+        {
+            "country": "Ukraine",
             "kumite": {
                 "name": "Dumuzi Dimov",
                 "style": "Kumite",
             },
             "kata": {},
               },
-              {
+        {
             "country": "United States",
             "kumite": {},
             "kata": {
@@ -556,9 +629,9 @@ var data = {
                 "style": "Kata",
             },
               },
-              
-              {
-     "country": "South Africa",
+
+        {
+            "country": "South Africa",
             "kumite": {
                 "name": "Juozas Goebel",
                 "style": "Kumite",
