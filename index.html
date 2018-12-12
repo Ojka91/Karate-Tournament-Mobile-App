@@ -144,9 +144,9 @@
             <div class="bteams">
                 <p>{{descriptions}}</p>
             </div>
-            
-                <a href="#teams" v-on:click="swap('teams')">Go back</a>
-<div class="space"></div>
+
+            <a href="#teams" v-on:click="swap('teams')">Go back</a>
+            <div class="space"></div>
         </div>
 
         <div class="slide-top" id="schedule" v-if="page === 'schedule'">
@@ -406,7 +406,7 @@
         </div>
 
 
-        <div id="login" class="slide-top" v-if="page === 'login'">
+        <div  class="slide-top" v-if="page === 'login'">
             <div class="home">
                 <div class="container-fluid">
                     <div class="row">
@@ -417,19 +417,28 @@
                     <form action="" method="">
                         <fieldset>
                             <div class="space"></div>
-                            <div class="login">
-                                <label for="googleacc">Google Account</label>
-                                <input class="email" placeholder="Google Account" type="email" name="googleacc" required>
-                                <label for="password">Password</label>
-                                <input class="password" placeholder="Password" type="text" name="password" required>
-                            </div>
+                           
                             <div class="submit">
-                                <input type="submit" value="submit">
+                               
+                                <button class="butt" type="submit" id="login" value="submit" v-on:click="login">Login a chat with Google</button>
                             </div>
                         </fieldset>
                     </form>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="chat" v-show="page==='chat'">
+            <div id="posts" class="box">
+                Loading posts...
+            </div>
+
+            <div class="inputs">
+                <input id="textInput" class="input" type="text" placeholder="Your message...">
+
+               
+                <button id="create-post" class="button is-primary" v-on:click="writeNewPost">Send</button>
             </div>
         </div>
 
@@ -483,6 +492,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZpef884M0KlWSX59iA7Icr-PGWp7mHr8",
+    authDomain: "chat-karate-tournament.firebaseapp.com",
+    databaseURL: "https://chat-karate-tournament.firebaseio.com",
+    projectId: "chat-karate-tournament",
+    storageBucket: "",
+    messagingSenderId: "990497464676"
+  };
+  firebase.initializeApp(config);
+</script>
+
 
 </body>
 

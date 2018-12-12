@@ -285,7 +285,9 @@ input {
     display:flex;
     justify-content: center;
     margin-top: 20px;
+    height: 60px;
 }
+
 
 input[type=submit]{
     padding: 5px;
