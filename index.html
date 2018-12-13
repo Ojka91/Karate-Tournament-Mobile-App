@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,  user-scalable=no">
-  
+
     <link rel="apple-touch-icon" href="styles/assets/kick.jpg">
 
     <!-- Bootstrap CSS -->
@@ -97,7 +97,7 @@
                         <div class="checkboxes">
                             <input type="checkbox" name="style" value="kumite" id="kumite" v-on:click='filters'> Kumite
                             <input type="checkbox" name="style" value="kata" id="kataf" v-on:click='filters'> Kata
-                           
+
                             <div class="space"></div>
                         </div>
                         <div class="listteams">
@@ -403,7 +403,7 @@
         </div>
 
 
-        <div  class="slide-top" v-if="page === 'login'">
+        <div class="slide-top" v-if="page === 'login'">
             <div class="home">
                 <div class="container-fluid">
                     <div class="row">
@@ -411,12 +411,12 @@
                             <h1>Login</h1>
                         </div>
                     </div>
-                    <form action="" method="" onsubmit="return false"> 
+                    <form action="" method="" onsubmit="return false">
                         <fieldset>
                             <div class="space"></div>
-                           
+
                             <div class="submit">
-                               
+
                                 <button class="butt" type="submit" id="login" value="submit" v-on:click="login">Login a chat with Google</button>
                             </div>
                         </fieldset>
@@ -427,6 +427,7 @@
         </div>
 
         <div class="chat" v-show="page==='chat'">
+          
             <div id="posts" class="box">
                 Loading posts...
             </div>
@@ -434,10 +435,11 @@
             <div class="inputs">
                 <input id="textInput" class="input" type="text" placeholder="Your message...">
 
-               
+
                 <button id="create-post" class="button is-primary" v-on:click="writeNewPost">Send</button>
             </div>
             <div class="space"></div>
+         
         </div>
 
 
@@ -490,19 +492,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCZpef884M0KlWSX59iA7Icr-PGWp7mHr8",
-    authDomain: "chat-karate-tournament.firebaseapp.com",
-    databaseURL: "https://chat-karate-tournament.firebaseio.com",
-    projectId: "chat-karate-tournament",
-    storageBucket: "",
-    messagingSenderId: "990497464676"
-  };
-  firebase.initializeApp(config);
-</script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB8WJR-uJss5_EfIO2WgPvOzxMRRhKSMt0",
+            authDomain: "karate-tournament.firebaseapp.com",
+            databaseURL: "https://karate-tournament.firebaseio.com",
+            projectId: "karate-tournament",
+            storageBucket: "karate-tournament.appspot.com",
+            messagingSenderId: "979670242604"
+        };
+        firebase.initializeApp(config);
+    </script>
 
 
 </body>

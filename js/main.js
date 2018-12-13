@@ -13,16 +13,7 @@ var myApp = new Vue({
         descriptions: '',
         name: '',
     },
-    computed: {
-        filters2() {
-            return this.teams.filter(team => {
-                var ku = document.getElementById("kumite").checked && team.kumite.name;
-                var ka = document.getElementById("kataf").checked && team.kata.name;
-
-                return ku || ka;
-            })
-        }
-    },
+ 
     methods: {
         //display the description of the players
         description: function (des) {
@@ -44,12 +35,12 @@ var myApp = new Vue({
             // Values
             var message = {
                 message: textToSend,
-                name: firebase.auth().currentUser.displayName,
+               // name: firebase.auth().currentUser.displayName,
             }
             console.log(message);
 
 
-            firebase.database().ref('chat-karate-tournament').push(message)
+            firebase.database().ref('karate-tournament').push(message)
             // A post entry.
 
             // Get a key for a new Post.
@@ -63,7 +54,7 @@ var myApp = new Vue({
         //get posts from firebase database and print them 
         getPosts: function () {
 
-            firebase.database().ref('chat-karate-tournament').on('value', function (data) {
+            firebase.database().ref('karate-tournament').on('value', function (data) {
                 var posts = document.getElementById("posts");
                 posts.innerHTML = "";
 
@@ -91,12 +82,12 @@ var myApp = new Vue({
             // Provider
             var provider = new firebase.auth.GoogleAuthProvider();
             // How to Log In
+           // How to Log In
             firebase.auth().signInWithPopup(provider).then(function(){
                myApp.getPosts();
                 myApp.swap("chat");
                 
             });
-            
 
         },
         //function that change pages SPA
