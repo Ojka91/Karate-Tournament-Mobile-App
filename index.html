@@ -20,7 +20,7 @@
     <div id="app">
         <div class="home" id="home" v-if="page === 'home'">
             <div class="container-fluid">
-                <div class="home">
+                <div class="homes">
                     <div class="row">
                         <div class="col-12 title">
                             <h1>Karate Tournament</h1>
@@ -86,7 +86,7 @@
 
 
         <div class=" slide-top" id="teams" v-if="page === 'teams'">
-            <div class="home">
+            <div class="homes">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 title">
@@ -147,7 +147,7 @@
         </div>
 
         <div class="slide-top" id="schedule" v-if="page === 'schedule'">
-            <div class="home">
+            <div class="homes">
                 <div class="container-fluid">
 
                     <div class="row">
@@ -208,7 +208,7 @@
         </div>
 
         <div class="bclassification slide-top" id="classifications" v-if="page === 'classification'">
-            <div class="home">
+            <div class="homes">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 title">
@@ -225,7 +225,7 @@
 
 
         <div class="blocation slide-top" id="location" v-if="page === 'location'">
-            <div class="home">
+            <div class="homes">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 title">
@@ -249,7 +249,7 @@
 
 
         <div class=" slide-top" id="history" v-if="page === 'history'">
-            <div class="home">
+            <div class="homes">
                 <div class="container-fluid">
 
                     <div class="row">
@@ -276,7 +276,7 @@
 
 
         <div class="brules" id="rules slide-top" v-if="page === 'rules'">
-            <div class="home">
+            <div class="homes">
                 <div class="container-fluid">
 
                     <div class="row">
@@ -404,7 +404,7 @@
 
 
         <div class="slide-top" v-if="page === 'login'">
-            <div class="home">
+            <div class="homes">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 title">
@@ -427,7 +427,7 @@
         </div>
 
         <div class="chat" v-show="page==='chat'">
-          
+
             <div id="posts" class="box">
                 Loading posts...
             </div>
@@ -439,11 +439,16 @@
                 <button id="create-post" class="button is-primary" v-on:click="writeNewPost">Send</button>
             </div>
             <div class="space"></div>
-         
+
+            <div class="homeChat fixed-bottom">
+                <button v-on:click="swap('home')">HOME</button>
+            </div>
+
+
         </div>
 
 
-        <div id="navbar" v-if="page !== 'home'">
+        <div id="navbar" v-if="page !== 'home' && page !== 'chat'">
             <div class="row fixed-bottom footer">
 
                 <div class="col-12 col-sm-10">

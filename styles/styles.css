@@ -28,7 +28,7 @@ p{
     justify-content: center;
 
 }
-.home{
+.homes{
     height: 100vh;    
 }
 
@@ -352,4 +352,14 @@ input[type=submit]{
 
 .input{
     width: 70%;
+}
+
+.homeChat{
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    background-color: buttonface;
+    
 }

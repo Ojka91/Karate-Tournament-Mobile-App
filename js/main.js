@@ -1,3 +1,5 @@
+//vue instance
+
 var myApp = new Vue({
     el: '#app',
     data: {
@@ -12,6 +14,7 @@ var myApp = new Vue({
         classPre: data.classification[0].pre,
         descriptions: '',
         name: '',
+        
     },
  
     methods: {
@@ -35,7 +38,7 @@ var myApp = new Vue({
             // Values
             var message = {
                 message: textToSend,
-               // name: firebase.auth().currentUser.displayName,
+                name: firebase.auth().currentUser.displayName,
             }
             console.log(message);
 
@@ -65,7 +68,7 @@ var myApp = new Vue({
                      text.setAttribute("class", "textchat");
                     var element = messages[key];
 
-                    text.append(firebase.auth().currentUser.displayName + ": " +element.message);
+                    text.append(element.name + ":" + " "+element.message);
                     posts.append(text);
                 }
 
@@ -88,6 +91,7 @@ var myApp = new Vue({
                 myApp.swap("chat");
                 
             });
+           
 
         },
         //function that change pages SPA
