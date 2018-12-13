@@ -71,6 +71,7 @@ var myApp = new Vue({
 
                 for (var key in messages) {
                     var text = document.createElement("div");
+                     text.setAttribute("class", "textchat");
                     var element = messages[key];
 
                     text.append(firebase.auth().currentUser.displayName + ": " +element.message);
@@ -86,12 +87,16 @@ var myApp = new Vue({
         //create the login function and swap to chat webpage
         login: function () {
             // https://firebase.google.com/docs/auth/web/google-signin
-
+            console.log('here');
             // Provider
             var provider = new firebase.auth.GoogleAuthProvider();
             // How to Log In
-            firebase.auth().signInWithPopup(provider);
-            this.swap("chat");
+            firebase.auth().signInWithPopup(provider).then(function(){
+               myApp.getPosts();
+                myApp.swap("chat");
+                
+            });
+            
 
         },
         //function that change pages SPA
@@ -121,18 +126,12 @@ var myApp = new Vue({
 
                     this.filteredTeams.push(this.teams[x]);
 
-                    if (this.teams[x].kata) {
-
-                        //                            delete this.filteredTeams[this.filteredTeams.length - 1].kata;
-                    }
+                    
                 } else if (document.getElementById("kataf").checked && this.teams[x].kata.name && document.getElementById("kumite").checked === false) {
 
                     this.filteredTeams.push(this.teams[x]);
 
-                    if (this.teams[x].kumite) {
-
-                        //                        delete this.filteredTeams[this.filteredTeams.length - 1].kumite;
-                    }
+                    
                 }
             }
         },

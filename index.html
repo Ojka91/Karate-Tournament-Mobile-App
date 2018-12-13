@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,  user-scalable=no">
+  
     <link rel="apple-touch-icon" href="styles/assets/kick.jpg">
 
     <!-- Bootstrap CSS -->
@@ -96,11 +97,7 @@
                         <div class="checkboxes">
                             <input type="checkbox" name="style" value="kumite" id="kumite" v-on:click='filters'> Kumite
                             <input type="checkbox" name="style" value="kata" id="kataf" v-on:click='filters'> Kata
-                            <label for="states" class="flex">States</label>
-                            <select class="flex" name="states" id="states">
-                                <option value="All" selected>All</option>
-                                <option value="" v-for="state in states">{{state}}</option>
-                            </select>
+                           
                             <div class="space"></div>
                         </div>
                         <div class="listteams">
@@ -108,7 +105,7 @@
                                 <h3>{{data.country}}</h3>
                                 <ul>
 
-                                    <li v-if="data.kumite"> <a data-toggle="collapse" v-bind:href="'#kumite'+index" role="button" aria-expanded="false" v-bind:aria-controls="'kumite'+index">{{data.kumite.style}}</a>
+                                    <li v-if="data.kumite.name"> <a data-toggle="collapse" v-bind:href="'#kumite'+index" role="button" aria-expanded="false" v-bind:aria-controls="'kumite'+index">{{data.kumite.style}}</a>
                                     </li>
                                     <div class="collapse" v-bind:id="'kumite'+index">
 
@@ -118,7 +115,7 @@
                                         description(data.kumite.name)">{{data.kumite.name}}</span></li>
                                         </ul>
                                     </div>
-                                    <li v-if="data.kata"><a data-toggle="collapse" v-bind:href='"#kata"+index' role="button" aria-expanded="false" v-bind:aria-controls='"kata"+index'>{{data.kata.style}}</a></li>
+                                    <li v-if="data.kata.name"><a data-toggle="collapse" v-bind:href='"#kata"+index' role="button" aria-expanded="false" v-bind:aria-controls='"kata"+index'>{{data.kata.style}}</a></li>
                                     <div class="collapse" v-bind:id='"kata"+index'>
                                         <ul>
                                             <li v-if="data.kata.name">
@@ -414,7 +411,7 @@
                             <h1>Login</h1>
                         </div>
                     </div>
-                    <form action="" method="">
+                    <form action="" method="" onsubmit="return false"> 
                         <fieldset>
                             <div class="space"></div>
                            
@@ -440,6 +437,7 @@
                
                 <button id="create-post" class="button is-primary" v-on:click="writeNewPost">Send</button>
             </div>
+            <div class="space"></div>
         </div>
 
 
