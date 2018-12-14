@@ -14,9 +14,10 @@ var myApp = new Vue({
         classPre: data.classification[0].pre,
         descriptions: '',
         name: '',
-        
+        auth: false,
+
     },
- 
+
     methods: {
         //display the description of the players
         description: function (des) {
@@ -34,7 +35,7 @@ var myApp = new Vue({
 
             // https://firebase.google.com/docs/database/web/read-and-write
 
-            var textToSend =  document.getElementById("textInput").value;
+            var textToSend = document.getElementById("textInput").value;
             // Values
             var message = {
                 message: textToSend,
@@ -58,21 +59,29 @@ var myApp = new Vue({
         getPosts: function () {
 
             firebase.database().ref('karate-tournament').on('value', function (data) {
-                var posts = document.getElementById("posts");
-                posts.innerHTML = "";
+                var mes = document.getElementById("messages");
+                mes.innerHTML = "";
 
                 var messages = data.val();
 
                 for (var key in messages) {
                     var text = document.createElement("div");
-                     text.setAttribute("class", "textchat");
+                    text.setAttribute("class", "textchat");
                     var element = messages[key];
 
-                    text.append(element.name + ":" + " "+element.message);
-                    posts.append(text);
-                }
+                    text.append(element.name + ":" + " " + element.message);
+                    mes.append(text);
 
+                    if (element.name == firebase.auth().currentUser.displayName) {
+                        text.setAttribute("class", "owner");
+                    }
+                    if (element.name != firebase.auth().currentUser.displayName) {
+                        text.setAttribute("class", "other");
+                    }
+                }
+                mes.scrollTop = mes.scrollHeight;
             })
+
 
             console.log("getting posts");
 
@@ -85,17 +94,20 @@ var myApp = new Vue({
             // Provider
             var provider = new firebase.auth.GoogleAuthProvider();
             // How to Log In
-           // How to Log In
-            firebase.auth().signInWithPopup(provider).then(function(){
-               myApp.getPosts();
+            // How to Log In
+            firebase.auth().signInWithPopup(provider).then(function () {
+                myApp.getPosts();
                 myApp.swap("chat");
-                
+                myApp.auth = true;
+
+
             });
-           
+
 
         },
         //function that change pages SPA
         swap: function (id) {
+            console.log(id);
             this.page = id;
 
             //remove "show" class on menu when changing page
@@ -121,12 +133,12 @@ var myApp = new Vue({
 
                     this.filteredTeams.push(this.teams[x]);
 
-                    
+
                 } else if (document.getElementById("kataf").checked && this.teams[x].kata.name && document.getElementById("kumite").checked === false) {
 
                     this.filteredTeams.push(this.teams[x]);
 
-                    
+
                 }
             }
         },

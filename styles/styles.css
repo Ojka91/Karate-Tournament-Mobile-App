@@ -1,107 +1,116 @@
-html, body{
-    margin:0px;
-    
+html,
+body {
+    margin: 0px;
+
     font-family: fantasy;
-   
+
 }
-body{
-        background-attachment: fixed;
-       background-image: url(assets/background3.jpg);
-    background-size:cover;
-      background-position: right;
+
+body {
+    background-attachment: fixed;
+    background-image: url(assets/background3.jpg);
+    background-size: cover;
+    background-position: right;
     background-repeat: no-repeat;
 }
-.title{
-    display:flex;
+
+.title {
+    display: flex;
     justify-content: center;
     margin-top: 3%;
 }
 
-h1{
+h1 {
     font-size: 8vw;
     color: black;
     text-shadow: 2px 2px 4px white;
-    
+
 }
-p{
-    display:flex;
+
+p {
+    display: flex;
     justify-content: center;
 
 }
-.homes{
-    height: 100vh;    
+
+.homes {
+    height: 100vh;
 }
 
-.icon{
+.icon {
     height: 25%;
     display: flex;
-align-items: center;
+    align-items: center;
 }
 
 
 
-.footer{
-   background-image:  linear-gradient(to right, rgba(217,214,217,0.9) 0%, rgba(212,212,212,0.8) 100%);
+.footer {
+    background-image: linear-gradient(to right, rgba(217, 214, 217, 0.9) 0%, rgba(212, 212, 212, 0.8) 100%);
 }
 
 
 
-.cercle{
+.cercle {
     height: 50%;
     width: 75%;
     background-color: black;
     border-radius: 5%;
-    box-shadow: 2px 3px 10px white; 
+    box-shadow: 2px 3px 10px white;
 }
-.test{
+
+.test {
     width: 100%;
     height: 100%;
-    display:flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
-.teams{
+
+.teams {
     background-image: url(assets/kick2.jpg);
     background-size: cover;
-   background-position: center;
-   
+    background-position: center;
+
 
 }
 
-.history{
+.history {
     background-image: url(assets/karategi.jpeg);
     background-position: center;
     background-size: cover;
 }
 
-.classification{
+.classification {
     background-image: url(assets/classification2.jpeg);
     background-position: center;
     background-size: 110%;
     background-repeat: no-repeat;
-     background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
-.rules{
+
+.rules {
     background-image: url(assets/firehand.jpg);
     background-position: center;
     background-size: 130%;
 }
 
-.maps{
+.maps {
     background-image: url(assets/maps.jpeg);
-          background-position: center;
+    background-position: center;
     background-size: contain;
 }
-.schedule{
-     background-image: url(assets/schedule5.png);
+
+.schedule {
+    background-image: url(assets/schedule5.png);
     background-color: rgba(255, 255, 255, 0.6);
-          background-position: center;
+    background-position: center;
     background-size: 180%;
     background-repeat: no-repeat;
 }
 
-.picon{
+.picon {
     font-size: 23px;
     color: white;
     text-shadow: 2px 2px 4px black;
@@ -109,20 +118,22 @@ align-items: center;
 
 
 
-.ficons{
+.ficons {
     position: absolute;
     bottom: 17px;
     right: -275px;
     position: fixed;
-    
+
 }
 
-.bhistory, .bteams, .login{
-  background-image:   linear-gradient(to right, rgba(255,255,255,0.63) 0%, rgba(255,255,255,0.45) 75%, rgba(255,255,255,0.39) 100%);
+.bhistory,
+.bteams,
+.login {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.45) 75%, rgba(255, 255, 255, 0.39) 100%);
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
-    
+
 }
 
 .navbar-nav {
@@ -135,6 +146,7 @@ align-items: center;
     list-style: none;
     align-items: center;
 }
+
 .navbar {
     /* position: absolute; */
     display: -ms-flexbox;
@@ -148,63 +160,70 @@ align-items: center;
     padding: .5rem 1rem;
 }
 
-.space{
-   height: 100px;
+.space {
+    height: 100px;
 }
 
 
-.wlogo{
+.wlogo {
     height: 25px;
     margin-top: 10px;
 }
-.logopos{
+
+.logopos {
     display: flex;
     flex-direction: row-reverse;
-   margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 10px;
 }
 
 
-.brules{
- height: 60%;
+.brules {
+    height: 60%;
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     justify-content: center;
 }
 
 .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-image:  linear-gradient(to bottom, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background-image: linear-gradient(to bottom, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
 }
-.mb-0, .my-0 {
-    margin-bottom: 0!important;
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
     display: flex;
     justify-content: center;
 }
+
 .btn-link {
     font-weight: 400;
     color: cadetblue;
     background-color: transparent;
-     text-shadow: 2px 2px 4px white;
+    text-shadow: 2px 2px 4px white;
 }
-.checkboxes{
+
+.checkboxes {
     display: flex;
-justify-content: center;
+    justify-content: center;
     position: relative;
     justify-content: space-around;
     align-items: center;
 }
-.listteams, .bteams{
-   display: flex;
+
+.listteams,
+.bteams {
+    display: flex;
     flex-direction: column;
 
 }
 
 label {
- 
-     margin-bottom: 0px;
+
+    margin-bottom: 0px;
 }
 
 
@@ -213,85 +232,89 @@ label {
 
 
 @-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-     animation: 1s fadeIn 1;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation: 1s fadeIn 1;
 }
 
 
 
 .slide-top {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
 @-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+    0% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
+
 @keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+    0% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 
 
 input {
-    border: 2px solid border-left: ;
+    border: 2px solid border-left:;
     border-radius: 4px;
-   
+
 }
-.login{
+
+.login {
     display: flex;
     flex-direction: column;
- 
+
 }
 
 
-.submit{
-    display:flex;
+.submit {
+    display: flex;
     justify-content: center;
     margin-top: 20px;
     height: 60px;
 }
 
 
-input[type=submit]{
+input[type=submit] {
     padding: 5px;
-   background-color: azure;
+    background-color: azure;
     border-radius: 5px;
 }
 
@@ -301,65 +324,93 @@ input[type=submit]{
 
 
 @media only screen and (orientation: landscape) {
-    .cercle{
+    .cercle {
         height: 75%;
         width: 50%;
     }
-    .wlogo{
+
+    .wlogo {
         margin-top: 30px;
     }
+
     .ficons {
-       
+
         display: flex;
-       
+
         right: -4%;
         bottom: 5.5%;
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         display: flex;
         justify-content: center;
     }
-    .navbar-expand-sm{
+
+    .navbar-expand-sm {
         margin-left: 40px;
     }
 }
 
 
-.flexcenter{
+.flexcenter {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
 }
 
-.mapa{
+.mapa {
     height: 300px;
     width: 300px;
 }
-.time{
+
+.time {
     font-weight: bold;
 }
 
-.schtitle{
+.schtitle {
     font-size: 24px;
 }
 
-.textchat{
-  background-image:   linear-gradient(to right, rgba(255,255,255,0.63) 0%, rgba(255,255,255,0.45) 75%, rgba(255,255,255,0.39) 100%);
+.textchat {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.45) 75%, rgba(255, 255, 255, 0.39) 100%);
     border-radius: 5px;
     margin: 5px;
 }
 
-.input{
+.input {
     width: 70%;
 }
 
-.homeChat{
-    
+.homeChat {
+
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     background-color: buttonface;
-    
+
+}
+
+.owner {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right, rgba(252, 234, 187, 0.38) 0%, rgba(252, 205, 77, 0.43) 25%, rgba(248, 181, 0, 0.51) 68%, rgba(251, 223, 147, 0.57) 100%);
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.other {
+    display: flex;
+    justify-content: flex-start;
+    background-image: linear-gradient(to right, rgba(225, 255, 255, 0.54) 0%, rgba(225, 255, 255, 0.55) 7%, rgba(253, 255, 255, 0.55) 12%, rgba(230, 248, 253, 0.57) 30%, rgba(200, 238, 251, 0.59) 54%, rgba(190, 228, 248, 0.61) 75%, rgba(177, 216, 245, 0.63) 100%);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#messages {
+    scroll-behavior: smooth;
+    height: 85vh;
+    overflow-y: scroll;
 }
