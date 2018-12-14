@@ -406,7 +406,7 @@ input[type=submit] {
     justify-content: flex-start;
     background-image: linear-gradient(to right, rgba(225, 255, 255, 0.54) 0%, rgba(225, 255, 255, 0.55) 7%, rgba(253, 255, 255, 0.55) 12%, rgba(230, 248, 253, 0.57) 30%, rgba(200, 238, 251, 0.59) 54%, rgba(190, 228, 248, 0.61) 75%, rgba(177, 216, 245, 0.63) 100%);
     border-radius: 5px;
-    margin: 5px;
+    margin: 10px;
 }
 
 #messages {
