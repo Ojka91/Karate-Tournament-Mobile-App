@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,  user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,  user-scalable=no, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="apple-touch-icon" href="styles/assets/kick.jpg">
 
@@ -428,7 +429,7 @@
 
         <div class="chat" v-show="page==='chat'">
 
-            <div id="posts" class="box">
+            <div id="messages" >
                 Loading posts...
             </div>
 
@@ -441,7 +442,7 @@
             <div class="space"></div>
 
             <div class="homeChat fixed-bottom">
-                <button v-on:click="swap('home')">HOME</button>
+<!--                <button v-on:click="swap('home')">HOME</button>-->
             </div>
 
 
