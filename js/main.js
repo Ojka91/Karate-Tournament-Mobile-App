@@ -50,7 +50,7 @@ var myApp = new Vue({
             // Get a key for a new Post.
 
             //Write data+
-
+         
             console.log("write");
             this.getPosts()
         },
@@ -78,6 +78,7 @@ var myApp = new Vue({
                     if (element.name != firebase.auth().currentUser.displayName) {
                         text.setAttribute("class", "other");
                     }
+                    console.log("insidechat")
                 }
                 mes.scrollTop = mes.scrollHeight;
             })

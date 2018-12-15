@@ -436,13 +436,14 @@
             <div id="messages" >
                 Loading posts...
             </div>
-
+            <form>
             <div class="inputs">
                 <input id="textInput" class="input" type="text" placeholder="Your message...">
 
 
-                <button id="create-post" class="button is-primary" v-on:click="writeNewPost">Send</button>
+                <input type="reset" id="create-post" value="Send" class="button is-primary" v-on:click="writeNewPost">
             </div>
+            </form>
             <div class="space"></div>
 
             <div class="homeChat fixed-bottom">
