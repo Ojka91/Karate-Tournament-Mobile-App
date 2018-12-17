@@ -33,7 +33,7 @@
 
                             <p class="picon" id="team">Teams</p>
 
-                            <div class="cercle teams fadeIn" v-on:click='swap("teams")' v-on:click='filters'>
+                            <div class="cercle teams fadeIn" v-on:click='swap("teams"); filters' >
 
                             </div>
 
@@ -78,9 +78,9 @@
                         <div class="col-10">
                         </div>
                         <div class="col-2">
-                              <template v-if="auth===false">   <img src="styles/assets/loginwhite.png" class="wlogo" v-on:click='swap("login")'>
+                              <template v-if="auth===false">   <img src="styles/assets/speech-bubble.png" class="wlogo" v-on:click='swap("login")'>
                    </template>
-                      <template v-if="auth"><img src="styles/assets/loginwhite.png" class="wlogo" v-on:click='swap("chat"); getPosts()'>
+                      <template v-if="auth"><img src="styles/assets/speech-bubble.png" class="wlogo" v-on:click='swap("chat"); getPosts()'>
                     </template>
                          
                         </div>
@@ -436,7 +436,7 @@
             <div id="messages" >
                 Loading posts...
             </div>
-            <form>
+            <form onSubmit="return false">
             <div class="inputs">
                 <input id="textInput" class="input" type="text" placeholder="Your message...">
 
@@ -448,6 +448,7 @@
 
             <div class="homeChat fixed-bottom">
                 <button v-on:click="swap('home')">HOME</button>
+                <button v-on:click="logout">Logout</button>
             </div>
 
 
@@ -490,9 +491,9 @@
                         </div>
                     </nav>
                     <template v-if="auth===false">
-                    <a class="ficons col-sm-2"><img src="styles/assets/login.png" v-on:click='swap("login")'></a></template>
+                    <a class="ficons col-sm-2"><img src="styles/assets/speech-bubble.png" v-on:click='swap("login")'></a></template>
                       <template v-if="auth">
-                    <a class="ficons col-sm-2"><img src="styles/assets/login.png" v-on:click='swap("chat"); getPosts()'></a></template>
+                    <a class="ficons col-sm-2"><img src="styles/assets/speech-bubble.png" v-on:click='swap("chat"); getPosts()'></a></template>
                     
                 </div>
 

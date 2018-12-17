@@ -100,11 +100,15 @@ var myApp = new Vue({
                 myApp.getPosts();
                 myApp.swap("chat");
                 myApp.auth = true;
-
-
             });
-
-
+        },
+        logout: function (){
+            firebase.auth().signOut().then(function() {
+                myApp.swap('login');
+  // Sign-out successful.
+}, function(error) {
+  // An error happened.
+});
         },
         //function that change pages SPA
         swap: function (id) {
